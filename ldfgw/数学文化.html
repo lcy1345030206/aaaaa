@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<link rel="stylesheet" href="css/base.css" />
+		<style type="text/css">
+			.container{      
+				height:100%;
+			}
+			header{
+				z-index:3;
+				position:fixed;
+				top:0;
+				width: 100%;
+				height:100px;
+				background: white;
+			}
+			header .header-top{
+				width: 100%;
+				height:50px;
+				line-height:50px;
+				background:blue;
+			}
+			header nav{
+				width:100%;
+				height:50px;
+				line-height:50px;
+				border-bottom:1px solid gainsboro;
+			}
+			aside{
+				z-index:88 ;
+				position:absolute;
+				top:0;
+				left: 0;
+				width:200px;
+				height:200px;
+				background:palevioletred;
+				text-align: center;
+				opacity: 0;
+				color:white;
+			}
+			@media screen and (max-width: 768px){
+				aside{
+				/*z-index:88 ;
+				position:absolute;
+				top:0;
+				left: 0;
+				width:200px;
+				height:300px;
+				background: palevioletred;
+				text-align: center;*/
+				opacity: 1;
+				}
+			}
+			
+			section{
+				width:90%;
+				margin:auto;
+			}
+			.box1{
+				margin-top: 120px;
+				margin-left: 20px;
+				z-index:13 ;
+				width:555px;
+				height: 300px;
+			     background: green;
+			}
+			.box2{
+				margin-top: 120px;
+				margin-left: 20px;
+				z-index:13 ;
+				width:555px;
+				height:406px;
+			     background:red;
+			}
+			
+			@media screen and (max-width:900px){
+				.box1,.box2{
+					margin: auto;
+				}
+			}
+		</style>
+	</head>
+	<body>
+		<div class="container">
+			<header>
+				<div class="header-top">数学文化</div>
+				<nav>
+					首页
+				</nav>
+			</header>
+			<aside>
+				<ul>
+					<li><img src="img/4.png"></li>
+					<li>首页</li>
+					<li>问题</li>
+					<li>设置</li>
+					<li>统计</li>
+					<li>插件</li>
+				</ul>
+			</aside>
+			<section>
+				<div class="box1 fl">111</div>
+				<div class="box1 fl">2222</div>
+				<div class="box2 fl">333</div>
+				<div class="box2 fl">444</div>
+			</section>
+		</div>
+			<br /><br /><br /><br /><br />
+	</body>
+</html>

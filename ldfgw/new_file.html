@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<link rel="stylesheet" href="css/base.css" />
+		<script type="text/javascript" src="js/jquery.min.js" ></script>
+		<style>
+		body{
+			background:#323232;
+		}
+		ul{
+			width:200px;
+			height:360px;
+			background:#ffe;
+			position: absolute;
+			top:50%;
+			left:50% ;
+			margin-top:-180px;/*//高的一半*/
+			margin-left:-100px;/*//宽的一半*/
+			border-top: 6px solid green;
+		}
+		li{
+			width:200px;
+			height:60px;
+			line-height:60px;
+			text-align: center;
+			cursor:pointer;
+		}
+		.bg{
+			background:green;
+		}
+		.ink {
+		    display: block;
+		    position: absolute;
+		    background:green;
+		    opacity: 0.6;
+		    border-radius: 100%;
+		    transform: scale(0);
+		}
+		
+		.ink.animate {
+		    animation: ripple 0.65s linear;
+		}
+		</style>
+	</head>
+	<body>
+		
+			<ul>
+				<li>
+					<a>11111111111111</a>
+				</li>
+				<li>22222222222222</li>
+				<li>33333333333333</li>
+				<li>11111111111111</li>
+				<li>22222222222222</li>
+				<li>33333333333333</li>
+			</ul>
+		<script type="text/javascript">
+			$('li').click(function(){
+                document.write($(this).va());
+			})
+		</script>
+	</body>
+</html>
